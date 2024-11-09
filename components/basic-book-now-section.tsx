@@ -47,7 +47,7 @@ Phone: ${formData.phone}`
   }
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8  bg-soft-cream">
+    <section className="py-16 px-4 sm:px-6 lg:px-8  bg-soft-cream" id="contact">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">Book Your Spa Experience</h2>
         <Card className="mb-8">
@@ -67,19 +67,19 @@ Phone: ${formData.phone}`
                 </Select>
               </div>
               <div>
-                <Label htmlFor="name">Full Name</Label>
+                <Label htmlFor="name">Name</Label>
                 <Input id="name" name="name" onChange={handleInputChange} />
               </div>
-              <div>
+              {/* <div>
                 <Label htmlFor="email">Email Address</Label>
                 <Input id="email" name="email" type="email" onChange={handleInputChange} />
               </div>
               <div>
                 <Label htmlFor="phone">Phone Number</Label>
                 <Input id="phone" name="phone" type="tel" onChange={handleInputChange} />
-              </div>
-              <Button className="w-full" onClick={sendToWhatsApp}>
-                Book Now via WhatsApp
+              </div> */}
+              <Button className="w-full bg-light-peach text-primary" onClick={sendToWhatsApp}>
+                Book Now
               </Button>
             </form>
           </CardContent>
@@ -87,7 +87,7 @@ Phone: ${formData.phone}`
 
         <div className="text-center">
           <h3 className="text-xl font-semibold mb-4">Connect with Us</h3>
-          <p className="text-gray-600 mb-6">Prefer to book through other channels? We're here to assist you!</p>
+          <p className="text-gray-600 mb-6">{"Prefer to book through other channels? We're here to assist you!"}</p>
           <div className="flex justify-center space-x-6">
             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-gray-600 hover:text-primary transition-colors">
               <MessageCircle className="h-8 w-8 mb-2" />

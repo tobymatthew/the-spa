@@ -80,3 +80,203 @@
     @apply bg-background text-foreground;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: theme('colors.primary.DEFAULT') !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 16px !important;
+}
+
+.swiper-button-prev {
+  left: 5px !important;
+}
+
+.swiper-button-next {
+  right: 5px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 50% !important;
+  padding: 20px !important;
+}
+
+@media (max-width: 380px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: theme('colors.primary.DEFAULT') !important;
+}
+
+/* Position the pagination bullets below the slider */
+.swiper-pagination {
+  position: absolute;
+  bottom: 0 !important; /* Override Swiper's default positioning */
+}
+
+/* Add some spacing between cards and pagination */
+.swiper-wrapper {
+  padding-bottom: 20px;
+}
+
+/* Optional: Style the pagination bullets */
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 6px !important;
+}
+
+/* Custom styles for the services tabs slider */
+.services-tabs-slider {
+  padding: 5px 30px !important;
+  width: 100% !important;
+}
+
+.services-tabs-slider .swiper-button-next,
+.services-tabs-slider .swiper-button-prev {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 12px !important;
+  top: 50% !important;
+  background-color: theme('colors.primary.DEFAULT') !important;
+}
+
+.services-tabs-slider .swiper-button-next:after,
+.services-tabs-slider .swiper-button-prev:after {
+  font-size: 12px !important;
+  color: white !important;
+}
+
+.services-tabs-slider .swiper-button-prev {
+  left: 0 !important;
+}
+
+.services-tabs-slider .swiper-button-next {
+  right: 0 !important;
+}
+
+/* Make dialog content scrollable on mobile */
+@media (max-width: 640px) {
+  .dialog-content {
+    max-height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+/* Style the TabsList to work with Swiper */
+[role="tablist"] {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Modal styles */
+.services-tabs-slider {
+  padding: 0 35px !important;
+}
+
+.services-tabs-slider .swiper-button-next,
+.services-tabs-slider .swiper-button-prev {
+  width: 25px !important;
+  height: 25px !important;
+  background: theme('colors.primary.DEFAULT') !important;
+  border-radius: 50% !important;
+  color: white !important;
+}
+
+.services-tabs-slider .swiper-button-next:after,
+.services-tabs-slider .swiper-button-prev:after {
+  font-size: 12px !important;
+}
+
+.services-tabs-slider .swiper-button-prev {
+  left: 5px !important;
+}
+
+.services-tabs-slider .swiper-button-next {
+  right: 5px !important;
+}
+
+/* Custom scrollbar for the content area */
+.overflow-y-auto {
+  scrollbar-width: thin;
+  scrollbar-color: theme('colors.gray.200') transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: theme('colors.gray.200');
+  border-radius: 3px;
+}
+
+/* Responsive Dialog Content for Mobile */
+@media (max-width: 640px) {
+  .dialog-content {
+    max-height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+/* Services Tabs: Horizontal Scroll for Small Screens */
+.services-tabs-slider {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 35px !important;
+  gap: 10px;
+}
+
+.services-tabs-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.services-tabs-slider::-webkit-scrollbar-thumb {
+  background-color: theme('colors.gray.300');
+  border-radius: 3px;
+}
+
+/* Hide Scroll on Larger Screens */
+@media (min-width: 768px) {
+  .services-tabs-slider {
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Styles for Tabs Navigation Buttons */
+.services-tabs-slider .swiper-button-next,
+.services-tabs-slider .swiper-button-prev {
+  width: 25px !important;
+  height: 25px !important;
+  background-color: theme('colors.primary.DEFAULT') !important;
+  border-radius: 50% !important;
+  color: white !important;
+}
+
+/* Scrollable Tabs Content for Mobile */
+[role="tablist"] {
+  background: transparent !important;
+  border: none !important;
+}
