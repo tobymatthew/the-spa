@@ -173,7 +173,7 @@ export function ProductSectionComponent() {
                       {product.description}
                     </p>
                     <div className="flex justify-between items-center">
-                      <span className="text-lg font-bold">{product.price}</span>
+                      <span className="text-lg font-bold">₦{product.price}</span>
                       <div className="flex items-center">
                         {renderStars(product.rating)}
                       </div>

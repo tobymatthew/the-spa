@@ -231,7 +231,7 @@ export function ServicesSectionWithNestedModal() {
                   <Clock className="w-4 h-4 mr-2" />
                   <span>{selectedSubService.duration}</span>
                 </div>
-                <span className="font-semibold">{selectedSubService.price}</span>
+                <span className="font-semibold">₦{selectedSubService.price}</span>
               </div>
               <Button className={`w-full ${buttonPeach} hover:${buttonPeach} text-black`}>Book Now</Button>
             </div>

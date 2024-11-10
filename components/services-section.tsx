@@ -18,7 +18,7 @@ const services = [
     image: "/bgimage.jpg",
     fullDescription: "Our Swedish massage is a gentle, relaxing treatment that uses long strokes, kneading, and circular movements to ease tension and promote relaxation. Perfect for first-time massage clients.",
     duration: "60 min",
-    price: "$85",
+    price: "45,000",
     reviews: [
       { author: "Sarah M.", rating: 5, comment: "Absolutely wonderful experience. The therapist was skilled and professional." },
       { author: "John D.", rating: 4.5, comment: "Very relaxing session, helped with my back pain." }
@@ -30,7 +30,7 @@ const services = [
     image: "/bgimage.jpg",
     fullDescription: "Hot stone massage therapy melts away tension, eases muscle stiffness, and increases circulation. Each session promotes deeper muscle relaxation through the placement of smooth, water-heated stones at key points on the body.",
     duration: "90 min",
-    price: "$120",
+    price: "35,000",
     reviews: [
       { author: "Michael R.", rating: 5, comment: "The hot stones were amazing for my sore muscles." },
       { author: "Emma L.", rating: 5, comment: "Best massage I've ever had. So relaxing!" }
@@ -42,7 +42,7 @@ const services = [
     image: "/bgimage.jpg",
     fullDescription: "Our aromatherapy massage combines the therapeutic benefits of massage with the healing properties of essential oils. Each session is customized with a unique blend of oils chosen to meet your specific needs.",
     duration: "75 min",
-    price: "$95",
+    price: "35,000",
     reviews: [
       { author: "Lisa K.", rating: 4.5, comment: "The essential oils were perfectly chosen for relaxation." },
       { author: "David P.", rating: 5, comment: "Wonderful aromatherapy experience, felt renewed after." }
@@ -54,7 +54,7 @@ const services = [
     image: "/bgimage.jpg",
     fullDescription: "Our luxury facial treatments are designed to rejuvenate and nourish your skin. Using premium products, we customize each facial to address your specific skin concerns and goals.",
     duration: "60 min",
-    price: "$95",
+    price: "60,000",
     reviews: [
       { author: "Rachel S.", rating: 5, comment: "My skin looks amazing after this facial!" },
       { author: "Tom B.", rating: 4.5, comment: "Very thorough and relaxing facial treatment." }
@@ -241,7 +241,7 @@ export function ServicesSectionComponent() {
                         </div>
                         <div className="p-4 bg-gray-50 rounded-lg">
                           <p className="font-semibold">Price</p>
-                          <p className="text-muted-foreground">{service.price}</p>
+                          <p className="text-muted-foreground">₦{service.price}</p>
                         </div>
                       </div>
 
