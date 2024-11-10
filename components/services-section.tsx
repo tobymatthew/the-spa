@@ -77,10 +77,10 @@ export function ServicesSectionComponent() {
     const hasHalfStar = rating % 1 !== 0
 
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<Star key={`full-${i}`} className="w-4 h-4 fill-primary text-primary" />)
+      stars.push(<Star key={`full-${i}`} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)
     }
     if (hasHalfStar) {
-      stars.push(<StarHalf key="half" className="w-4 h-4 fill-primary text-primary" />)
+      stars.push(<StarHalf key="half" className="w-4 h-4 fill-yellow-400 text-yellow-400" />)
     }
     return stars
   }
@@ -245,7 +245,7 @@ export function ServicesSectionComponent() {
                         </div>
                       </div>
 
-                      <Button className={`w-full`}>Book Now</Button>
+                      <Button className={`w-full ${buttonPeach} hover:${buttonPeach} text-black`}>Book Now</Button>
                     </div>
 
                     {/* Reviews Section */}

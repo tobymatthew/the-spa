@@ -78,7 +78,7 @@ Phone: ${formData.phone}`
                 <Label htmlFor="phone">Phone Number</Label>
                 <Input id="phone" name="phone" type="tel" onChange={handleInputChange} />
               </div> */}
-              <Button className="w-full bg-light-peach text-primary" onClick={sendToWhatsApp}>
+              <Button className="w-full bg-light-peach hover:bg-light-peach text-primary" onClick={sendToWhatsApp}>
                 Book Now
               </Button>
             </form>

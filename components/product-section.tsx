@@ -100,8 +100,8 @@ const products = [
   },
 ];
 
-const bgCream='bg-soft-cream';
-const buttonPeach='bg-light-peach';
+const bgCream = "bg-soft-cream";
+const buttonPeach = "bg-light-peach";
 const bgSage = "bg-sage-green";
 export function ProductSectionComponent() {
   const [isOpen, setIsOpen] = useState(false);
@@ -115,12 +115,18 @@ export function ProductSectionComponent() {
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <Star key={`full-${i}`} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+        <Star
+          key={`full-${i}`}
+          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+        />
       );
     }
     if (hasHalfStar) {
       stars.push(
-        <StarHalf key="half" className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+        <StarHalf
+          key="half"
+          className="w-4 h-4 fill-yellow-400 text-yellow-400"
+        />
       );
     }
     return stars;
@@ -173,7 +179,7 @@ export function ProductSectionComponent() {
                       </div>
                     </div>
                     <Button
-                      className="w-full mt-4"
+                      className={`w-full mt-4 ${buttonPeach} hover:${buttonPeach} text-black`}
                       onClick={() => {
                         setSelectedProduct(product);
                         setIsOpen(true);
@@ -231,7 +237,7 @@ export function ProductSectionComponent() {
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="w-[90vw] max-w-[600px] p-4 lg:p-8 lg:max-w-[700px] lg:max-h-[80vh] overflow-y-auto">
+        <DialogContent className="w-[90vw] max-w-[600px] p-4 lg:p-8 lg:max-w-[700px] lg:max-h-[80vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>{selectedProduct.name}</DialogTitle>
           </DialogHeader>
@@ -283,7 +289,9 @@ export function ProductSectionComponent() {
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
-                <Button className="w-full bg-light-peach text-primary">Add to Cart</Button>
+                <Button className="w-full bg-light-peach text-primary">
+                  Add to Cart
+                </Button>
                 <div className="space-y-4">
                   <h4 className="text-xl font-semibold">Reviews</h4>
                   {selectedProduct.reviews.map((review, index) => (

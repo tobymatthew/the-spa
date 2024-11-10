@@ -103,6 +103,8 @@ const services = [
   },
 ]
 
+const buttonPeach = "bg-light-peach";
+
 export function ServicesSectionWithNestedModal() {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedService, setSelectedService] = useState(services[0].title)
@@ -231,7 +233,7 @@ export function ServicesSectionWithNestedModal() {
                 </div>
                 <span className="font-semibold">{selectedSubService.price}</span>
               </div>
-              <Button className="w-full">Book Now</Button>
+              <Button className={`w-full ${buttonPeach} hover:${buttonPeach} text-black`}>Book Now</Button>
             </div>
           </DialogContent>
         </Dialog>
