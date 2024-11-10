@@ -45,7 +45,7 @@ const products = [
     description:
       "Complete set for the perfect beard, including oil, balm, and comb.",
     image: "/beard.webp",
-    price: "7390.99",
+    price: "7,390.99",
     rating: 5,
     reviews: [
       {
@@ -64,7 +64,7 @@ const products = [
     name: "Exfoliating Face Scrub",
     description: "Gentle exfoliation for smooth, radiant skin.",
     image: "/scrub.avif",
-    price: "19000",
+    price: "19,000",
     rating: 4.5,
     reviews: [
       {
@@ -83,7 +83,7 @@ const products = [
     name: "Hydrating Body Lotion",
     description: "Rich, nourishing lotion for all-day moisture.",
     image: "/lotion.avif",
-    price: "29000.99",
+    price: "29,000.99",
     rating: 4.5,
     reviews: [
       {
@@ -289,8 +289,8 @@ export function ProductSectionComponent() {
                     <Plus className="h-4 w-4" />
                   </Button>
                 </div>
-                <Button className="w-full bg-light-peach text-primary">
-                  Add to Cart
+                <Button className="w-full bg-light-peach hover:bg-light-peach text-primary">
+                  Buy Now
                 </Button>
                 <div className="space-y-4">
                   <h4 className="text-xl font-semibold">Reviews</h4>

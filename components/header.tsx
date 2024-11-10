@@ -36,7 +36,7 @@ function Header({}: Props) {
       <nav className="relative z-10 flex items-center justify-between px-4 py-4 lg:px-8">
         {/* Logo */}
         <div className="text-xl font-bold text-white sm:text-2xl">
-          <Link href="/">Bee Bella</Link>
+          <Link href="/">Bee Bells</Link>
         </div>
 
         {/* Desktop Navigation Links */}
