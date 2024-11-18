@@ -76,7 +76,7 @@ function Header({}: Props) {
               {navItems.map((item) => (
                 <Link
                   key={item}
-                  href={`/${item.toLowerCase().replace(' ', '-')}`}
+                  href={`#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-lg font-medium hover:text-primary"
                   onClick={() => setIsOpen(false)}
                 >

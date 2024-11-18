@@ -13,48 +13,48 @@ const services = [
   {
     title: "Swedish Massage",
     description: "Relax and unwind with our classic Swedish massage technique.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/bgimage.jpg",
     subServices: [
       {
         name: "30-Minute Swedish Massage",
         description: "A quick relaxation session focusing on major tension areas.",
         duration: "30 min",
-        price: "$45",
-        image: "/placeholder.svg?height=200&width=300"
+        price: "45",
+        image: "/bgimage.jpg"
       },
       {
         name: "60-Minute Swedish Massage",
         description: "Our most popular option for full-body relaxation.",
         duration: "60 min",
-        price: "$85",
-        image: "/placeholder.svg?height=200&width=300"
+        price: "85",
+        image: "/bgimage2.jpg"
       },
       {
         name: "90-Minute Swedish Massage",
         description: "Extended relaxation session for deep tension relief.",
         duration: "90 min",
-        price: "$120",
-        image: "/placeholder.svg?height=200&width=300"
+        price: "120",
+        image: "/bgimage.jpg"
       }
     ]
   },
   {
     title: "Hot Stone Therapy",
     description: "Experience deep relaxation with heated stones.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/bgimage2.jpg",
     subServices: [
       {
         name: "Hot Stone Back Treatment",
         description: "Focused heat therapy for back tension relief.",
         duration: "45 min",
-        price: "$70",
-        image: "/placeholder.svg?height=200&width=300"
+        price: "70",
+        image: "/bgimage.jpg"
       },
       {
         name: "Full Body Hot Stone Massage",
         description: "Complete relaxation with full-body heated stone therapy.",
         duration: "90 min",
-        price: "$130",
+        price: "130",
         image: "/placeholder.svg?height=200&width=300"
       }
     ]
@@ -68,8 +68,8 @@ const services = [
         name: "Relaxation Aromatherapy",
         description: "Calming blend to reduce stress and promote relaxation.",
         duration: "60 min",
-        price: "$95",
-        image: "/placeholder.svg?height=200&width=300"
+        price: "95",
+        image: "/"
       },
       {
         name: "Energizing Aromatherapy",
